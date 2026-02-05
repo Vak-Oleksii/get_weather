@@ -11,8 +11,19 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    {% block content %}
+    <aside>
+        <span>Лого на стадії розробки</span>
+        <span class="logo">WeatherHub</span>
+        <h3>Шось робити</h3>
+        <ul>
+            <a href=""><li>Дізнатися погоду</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
+    </main>
+
 </body>
 </html>
