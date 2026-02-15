@@ -8,7 +8,17 @@
     <div class="features">
         <h1>Головна</h1>
         <p>Щось про сервіс</p>
-        <button class="btn btn-warning">Щоб розпочати якусь роботу</button>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.name }}
+
+            <input type='submit' name="send" value="дізнатися" class="mt-2 btn btn-danger">
+
+        </form>
+
+        <b>В місті </b> {{data.city}}<br>
+        <b>Температура:</b> {{data.temp}} <sup>o</sup><br>
+
     </div>
 
 
